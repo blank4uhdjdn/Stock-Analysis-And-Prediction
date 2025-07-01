@@ -17,7 +17,6 @@ if "stock_data" in st.session_state:
         low=df["Low"],
         close=df["Close"]
     )])
-    fig.update_layout(xaxis_rangeslider_visible=False)
     st.plotly_chart(fig)
 else:
     st.warning("Please load stock data from the Overview page.")

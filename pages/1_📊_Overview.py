@@ -15,3 +15,4 @@ if ticker:
     st.write(data.tail())
     st.line_chart(data["Close"])
     st.session_state["stock_data"] = data
+
